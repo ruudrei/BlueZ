@@ -52,13 +52,13 @@ for path, interfaces in objects.iteritems():
 	device_list = [d for d in all_devices if d.startswith(path + "/")]
 
 	for dev_path in device_list:
-		print("    [ " + dev_path + " ]")
+		#print("    [ " + dev_path + " ]")
+                
 		
 		if dev_path=='/org/bluez/hci0/dev_18_31_BF_8B_9C_7D' or dev_path=='/org/bluez/hci0/dev_68_EF_43_5F_0D_57':
+                    print(" ")
                     print("    [ " + dev_path + " ]")
                     
-                    print("@@@@@@@@@@@@@@")
-
                     dev = objects[dev_path]
                     properties = dev["org.bluez.Device1"]
                     
